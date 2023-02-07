@@ -1,0 +1,46 @@
+﻿@inherits LayoutComponentBase
+
+<PageTitle>UserManagementApp</PageTitle>
+
+<div class="page">
+    <!-- <div class="sidebar">
+        <NavMenu />
+    </div> -->
+
+    <main>
+        <!--<div class="top-row px-4">      
+            <div class="nav-item px-3">
+                <NavLink class="" Match="NavLinkMatch.All">
+                    <span class="oi oi-home" aria-hidden="true"></span> Login
+                </NavLink>
+                
+            </div>
+        </div>-->
+
+        <nav class="navbar navbar-dark bg-dark" style="background-color: #e3f2fd;">
+            <div class="container-fluid">
+                <NavLink class="navbar-brand" href="" Match="NavLinkMatch.All">
+                    User Management App
+                </NavLink>
+
+                <div class="d-flex">
+                    <NavLink class="navbar-brand" href="login" Match="NavLinkMatch.All">
+                        Login
+                    </NavLink>
+                    <NavLink class="navbar-brand" href="register" Match="NavLinkMatch.All">
+                        Register
+                    </NavLink>
+                    <NavLink class="navbar-brand" href="profile" Match="NavLinkMatch.All">
+                        Profile
+                    </NavLink>
+                </div>
+            </div>
+        </nav>
+
+      
+
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
+</div>
